@@ -70,7 +70,7 @@ class ProudDirectory extends \ProudPlugin {
       'show_in_rest'          => TRUE,
       'rest_base'             => 'directories',
       'rest_controller_class' => 'WP_REST_Posts_Controller',
-      'supports'              => ['title'], //'editor'
+      'supports'              => ['title', 'editor'],
     ];
 
     register_post_type('directory', $args);
